@@ -3,6 +3,8 @@
 #define PLATFORMER_GAME_H
 
 #include <SFML/Graphics.hpp>
+#include "GameObject.h"
+#include "Vector2.h"
 
 class Game
 {
@@ -19,9 +21,9 @@ class Game
   sf::RenderWindow& window;
   GameObject background;
   sf::Texture background_texture;
-  sf::Sprite penguin;
+  GameObject penguin;
   sf::Texture penguin_texture;
-  sf::Sprite Passport;
+  GameObject Passport;
   sf::Texture Passport_texture;
   sf::Sprite chicken;
   sf::Texture chicken_texture;

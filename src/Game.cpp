@@ -19,17 +19,12 @@ bool Game::init()
 	{
 		std::cout << "font loaded\n";
 	}
-    if (background_texture.loadFromFile("C:\\uni\\year 3\\mgicpp-sfml-starter-template\\Data\\WhackaMole Worksheet\\background.png"))
-    {
-        std::cout << "background texture loaded\n";
-    }
-    background.setTexture(background_texture);
+    background.initialiseSprite(background_texture, "C:\\uni\\year 3\\mgicpp-sfml-starter-template\\Data\\WhackaMole Worksheet\\background.png"))
+    background.getSprite()->setPosition(0, 600);
+    background.getSprite()->setScale(window.getSize().x / background.getSprite()->getLocalBounds().width,
+                                     window.getSize().y / background.getSprite()->getLocalBounds().height );
 
-    if (penguin_texture.loadFromFile("C:\\uni\\year 3\\mgicpp-sfml-starter-template\\Critter Crossing Customs\\penguin.png"))
-    {
-        std::cout << "penguin could loaded\n";
-    }
-    penguin.setTexture(penguin_texture);
+    penguin.initialiseSprite(penguin_texture, C:\uni\year 3\mgicpp-sfml-starter-template\Critter Crossing Customs\penguin.png);
     penguin.setPosition(100,100);
     penguin.setScale(0.5f,0.5f);
 
@@ -91,7 +86,7 @@ void Game::render()
     }
     else if (GameState == 2)
     {
-        window.draw(background);
+        window.draw(*background.getSprite());
     }
 }
 
