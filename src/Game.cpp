@@ -40,7 +40,15 @@ bool Game::init()
     character2.setScale(0.8f,0.8f);
     character2.rotate(90);
 
+    accept_texture.loadFromFile("C:\\uni\\year 3\\mgicpp-sfml-starter-template\\Critter Crossing Customs\\accept button.png");
+    accept.setTexture(accept_texture);
+    accept.setPosition(900, 475);
+    accept.setScale(0.6f, 0.6f);
 
+    reject_texture.loadFromFile("C:\\uni\\year 3\\mgicpp-sfml-starter-template\\Critter Crossing Customs\\reject button.png");
+    reject.setTexture(reject_texture);
+    reject.setPosition(900, 575);
+    reject.setScale(0.6f, 0.6f);
 
     Passport_texture.loadFromFile("C:\\uni\\year 3\\mgicpp-sfml-starter-template\\Critter Crossing Customs\\default passport.png");
     Passport.setTexture(Passport_texture);
@@ -95,6 +103,8 @@ void Game::render()
         window.draw(character);
         window.draw(Passport);
         window.draw(character2);
+        window.draw(accept);
+        window.draw(reject);
 
 
     }
