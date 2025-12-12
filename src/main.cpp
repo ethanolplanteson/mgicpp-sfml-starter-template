@@ -9,7 +9,7 @@ int main()
             << std::endl;
 
   // create window and set up
-  sf::RenderWindow window(sf::VideoMode(1080, 720), "Platform game");
+  sf::RenderWindow window(sf::VideoMode(1080, 720), "Passport interception");
   window.setFramerateLimit(60);
 
   //initialise an instance of the game class
@@ -37,6 +37,10 @@ int main()
     //'process inputs' element of the game loop
     while (window.pollEvent(event))
     {
+        if (event.type == sf::Event::mouseClicked)
+        {
+            game.mouseClicked(event);
+        }
       // "close requested" event: we close the window
       if (event.type == sf::Event::Closed)
         window.close();
