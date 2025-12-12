@@ -37,7 +37,7 @@ int main()
     //'process inputs' element of the game loop
     while (window.pollEvent(event))
     {
-        if (event.type == sf::Event::mouseClicked)
+        if (event.type == sf::Event::MouseButtonPressed)
         {
             game.mouseClicked(event);
         }

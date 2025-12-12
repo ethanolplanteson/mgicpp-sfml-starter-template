@@ -1,0 +1,21 @@
+# ninja log v5
+63	673	7872808122481947	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.obj	5542f8388edbc1a9
+238	757	7872808123070403	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.obj	3d5bb6e7738af7a
+106	802	7872808123272270	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.obj	eac4a1021c96dee6
+182	908	7872808124377512	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.obj	bf869bff407f87ad
+296	953	7872808124682366	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.obj	affe02f2e92aa610
+675	2535	7872808140968816	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.obj	4ae74b65e71d34d0
+82	2639	7872808141788572	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.obj	7316330a7efc338c
+2537	2916	7872808144858972	_deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/GlResource.cpp.obj	15b6e8bea001732f
+203	4772	7872808163310459	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.obj	beb7fdabb3cf82f8
+158	4776	7872808163290952	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.obj	e19248b6f9d1e51c
+275	4812	7872808163832252	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ClockImpl.cpp.obj	cb6907cd3a0e8090
+256	4815	7872808163797054	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/MutexImpl.cpp.obj	868d81bd1fd0d789
+132	4861	7872808164214208	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.obj	c183e7a86315d103
+220	4863	7872808164270953	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.obj	f0240e139f8b766e
+758	4894	7872808164535260	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/SleepImpl.cpp.obj	2f0ec51eeca4866d
+909	5149	7872808167212102	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadLocalImpl.cpp.obj	93a567f523835869
+802	6315	7872808178764487	_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadImpl.cpp.obj	b006426099ec6fc0
+954	6649	7872808182157752	_deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Joystick.cpp.obj	8ba764c2abcbf957
+2916	7537	7872808190985970	_deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/JoystickManager.cpp.obj	77884603442d168a
+2640	7876	7872808194535262	_deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/GlContext.cpp.obj	d9004566b50e0faa

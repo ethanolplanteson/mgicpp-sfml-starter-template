@@ -15,7 +15,10 @@ Game::~Game()
 
 bool Game::init()
 {
-
+	if (!font.loadFromFile("Data/Fonts/OpenSans-Bold.ttf"))
+	{
+		std::cout << "font loaded\n";
+	}
   return true;
 }
 

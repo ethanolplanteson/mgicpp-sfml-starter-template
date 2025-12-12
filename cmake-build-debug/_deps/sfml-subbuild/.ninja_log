@@ -1,0 +1,21 @@
+# ninja log v5
+3	638	7872807077888084	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	4b851186879f76f2
+3	638	7872807077888084	C:/uni/year 3/mgicpp-sfml-starter-template/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	4b851186879f76f2
+639	18243	7872807253920153	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	23870c004efe7eb
+639	18243	7872807253920153	C:/uni/year 3/mgicpp-sfml-starter-template/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	23870c004efe7eb
+18243	18691	0	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	222d78452003e226
+18243	18691	0	C:/uni/year 3/mgicpp-sfml-starter-template/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	222d78452003e226
+18693	18820	7872807259685994	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	61a30933023499fc
+18693	18820	7872807259685994	C:/uni/year 3/mgicpp-sfml-starter-template/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	61a30933023499fc
+18820	18942	7872807260918860	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	3a41e9b0c9bcc257
+18820	18942	7872807260918860	C:/uni/year 3/mgicpp-sfml-starter-template/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	3a41e9b0c9bcc257
+18943	19046	7872807261978585	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	a3469851980babba
+18943	19046	7872807261978585	C:/uni/year 3/mgicpp-sfml-starter-template/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	a3469851980babba
+19047	19142	7872807262940299	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	93712194427ea031
+19047	19142	7872807262940299	C:/uni/year 3/mgicpp-sfml-starter-template/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	93712194427ea031
+19142	19258	7872807264088739	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	3797036b0fb883f0
+19142	19258	7872807264088739	C:/uni/year 3/mgicpp-sfml-starter-template/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	3797036b0fb883f0
+19258	19410	7872807265623858	CMakeFiles/sfml-populate-complete	7bd44cb9f6a4463e
+19258	19410	7872807265623858	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	7bd44cb9f6a4463e
+19258	19410	7872807265623858	C:/uni/year 3/mgicpp-sfml-starter-template/cmake-build-debug/_deps/sfml-subbuild/CMakeFiles/sfml-populate-complete	7bd44cb9f6a4463e
+19258	19410	7872807265623858	C:/uni/year 3/mgicpp-sfml-starter-template/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	7bd44cb9f6a4463e
