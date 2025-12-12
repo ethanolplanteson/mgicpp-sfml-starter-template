@@ -19,16 +19,34 @@ bool Game::init()
 	{
 		std::cout << "font loaded\n";
 	}
-    background.initialiseSprite(background_texture, "C:\\uni\\year 3\\mgicpp-sfml-starter-template\\Data\\WhackaMole Worksheet\\background.png"))
-    background.getSprite()->setPosition(0, 600);
-    background.getSprite()->setScale(window.getSize().x / background.getSprite()->getLocalBounds().width,
-                                     window.getSize().y / background.getSprite()->getLocalBounds().height );
 
-    penguin.initialiseSprite(penguin_texture, C:\uni\year 3\mgicpp-sfml-starter-template\Critter Crossing Customs\penguin.png);
-    penguin.setPosition(100,100);
-    penguin.setScale(0.5f,0.5f);
 
-    GameState = 1; //main menu
+
+    if (background_texture.loadFromFile("C:\\uni\\year 3\\mgicpp-sfml-starter-template\\Data\\WhackaMole Worksheet\\background.png"))
+    {
+        std::cout << "background loaded\n";
+    }
+    background.setTexture(background_texture);
+
+
+    character_texture.loadFromFile("C:\\uni\\year 3\\mgicpp-sfml-starter-template\\Critter Crossing Customs\\buffalo.png");
+    character.setTexture(character_texture);
+    character.setPosition(100,100);
+    character.setScale(2.0f,2.0f);
+
+    character2_texture.loadFromFile("C:\\uni\\year 3\\mgicpp-sfml-starter-template\\Critter Crossing Customs\\chicken.png");
+    character2.setTexture(character2_texture);
+    character2.setPosition(730,475);
+    character2.setScale(0.8f,0.8f);
+    character2.rotate(90);
+
+
+
+    Passport_texture.loadFromFile("C:\\uni\\year 3\\mgicpp-sfml-starter-template\\Critter Crossing Customs\\default passport.png");
+    Passport.setTexture(Passport_texture);
+    Passport.setPosition(600,200);
+    Passport.setScale(0.7f,0.7f);
+
 
     menu_text.setString("Passport Interception");
     menu_text.setFont(font);
@@ -54,39 +72,31 @@ bool Game::init()
             window.getSize().x / 2 + quit_option.getGlobalBounds().width / 2,
             window.getSize().y / 2 - quit_option.getGlobalBounds().height / 2);
 
-    GameState = 3; //end screen
-    end_text.setString("Passport Intercepted");
-    end_text.setFont(font);
-    end_text.setCharacterSize(100);
-    end_text.setFillColor(sf::Color(205,0,26,128));
-    end_text.setPosition(
-            float(window.getSize().x)/2 - end_text.getGlobalBounds().width/2,
-            end_text.getGlobalBounds().height);
+
+
   return true;
 }
 
 void Game::update(float dt)
 {
-    if (GameState == 1)
-    {
-    }
-    else if (GameState == 2)
-    {
 
-    }
 }
 
 void Game::render()
 {
-    if (GameState == 1)
+    if (in_menu)
     {
         window.draw(menu_text);
         window.draw(play_option);
         window.draw(quit_option);
     }
-    else if (GameState == 2)
-    {
-        window.draw(*background.getSprite());
+    else {
+        window.draw(background);
+        window.draw(character);
+        window.draw(Passport);
+        window.draw(character2);
+
+
     }
 }
 
@@ -100,7 +110,35 @@ void Game::mouseClicked(sf::Event event)
 
 void Game::keyPressed(sf::Event event)
 {
+    if (event.key.code == sf::Keyboard::Escape)
+    {
+        window.close();
+    }
 
+    if (
+            (event.key.code == sf::Keyboard::Left) ||
+            (event.key.code == sf::Keyboard::Right))
+    {
+        play_selected = !play_selected;
+        if (play_selected)
+        {
+            play_option.setString("> Play <");
+            quit_option.setString("Quit");
+        }
+        else
+        {
+            play_option.setString("Play");
+
+            quit_option.setString("> Quit <");
+        }
+    }
+        else if (event.key.code == sf::Keyboard::Enter)
+        {
+        if (play_selected)
+        {
+            in_menu = false;
+        }
+        }
 }
 
 

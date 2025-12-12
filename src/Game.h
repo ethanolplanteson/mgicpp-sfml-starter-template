@@ -4,7 +4,6 @@
 
 #include <SFML/Graphics.hpp>
 #include "GameObject.h"
-#include "Vector2.h"
 
 class Game
 {
@@ -19,14 +18,14 @@ class Game
 
  private:
   sf::RenderWindow& window;
-  GameObject background;
+  sf::Sprite background;
   sf::Texture background_texture;
-  GameObject penguin;
-  sf::Texture penguin_texture;
-  GameObject Passport;
+  sf::Sprite character;
+  sf::Texture character_texture;
+  sf::Sprite character2;
+  sf::Texture character2_texture;
+  sf::Sprite Passport;
   sf::Texture Passport_texture;
-  sf::Sprite chicken;
-  sf::Texture chicken_texture;
   sf::Sprite accept;
   sf::Texture accept_texture;
   sf::Sprite reject;
@@ -34,7 +33,7 @@ class Game
   sf::Font font;
 
 
-  int GameState = 1;
+  bool in_menu = true;
   sf::Text menu_text;
   sf::Text play_option;
   sf::Text quit_option;
