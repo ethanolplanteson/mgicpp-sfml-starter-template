@@ -17,8 +17,28 @@ class Game
 
  private:
   sf::RenderWindow& window;
-  sf::Sprite ball;
-  sf::Texture ball_texture;
+  GameObject background;
+  sf::Texture background_texture;
+  sf::Sprite penguin;
+  sf::Texture penguin_texture;
+  sf::Sprite Passport;
+  sf::Texture Passport_texture;
+  sf::Sprite chicken;
+  sf::Texture chicken_texture;
+  sf::Sprite accept;
+  sf::Texture accept_texture;
+  sf::Sprite reject;
+  sf::Texture reject_texture;
+  sf::Font font;
+
+
+  int GameState = 1;
+  sf::Text menu_text;
+  sf::Text play_option;
+  sf::Text quit_option;
+  bool play_selected = true;
+  sf::Text end_text;
+
 
 };
 
