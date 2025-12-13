@@ -115,9 +115,37 @@ void Game::mouseClicked(sf::Event event)
   //get the click position
   sf::Vector2i click = sf::Mouse::getPosition(window);
 
+  // check if button works
+    if (collisionCheck(click, accept))
+    {
+        std::cout << "win" << std::endl;
+    }
+    if (collisionCheck(click, reject))
+    {
+        window.close();
+    }
 
 }
+bool Game::collisionCheck(sf::Vector2i click, sf::Sprite sprite)
+{
+    if (sprite.getPosition().x + sprite.getGlobalBounds().width > click.x)
+    {
+        if (click.x > sprite.getPosition().x)
+        {
+            if (sprite.getPosition().y + sprite.getGlobalBounds().height > click.y)
+            {
+                if (click.y > sprite.getPosition().y)
+                {
+                    return true;
+                }
+            }
 
+        }
+    }
+
+
+    return false;
+}
 void Game::keyPressed(sf::Event event)
 {
     if (event.key.code == sf::Keyboard::Escape)
