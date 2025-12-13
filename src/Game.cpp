@@ -126,6 +126,7 @@ void Game::mouseClicked(sf::Event event)
     }
 
 }
+
 bool Game::collisionCheck(sf::Vector2i click, sf::Sprite sprite)
 {
     if (sprite.getPosition().x + sprite.getGlobalBounds().width > click.x)
